@@ -1,0 +1,201 @@
+/* css代码 */
+
+/* 整个页面的背景色 */
+body {
+    /* rgb颜色 */
+    background-color: rgb(255, 252, 247);
+    /* 页面上的文字颜色（优先级小于box） */
+    color: #555555;
+    /* 页面上的文字字体（优先级小于box） */
+    font-family: 'Courier New', Courier, monospace;
+    /* 页面上的文字大小（优先级……） */
+    font-size: 15px;
+    /* 行间距 */
+    line-height: 1.5em;
+    margin: 0px;
+}
+
+.box1 {
+    /* 文字颜色 */
+    color: white;
+    /* 宽度 */
+    width: 80%;
+    /* 居中 */
+    margin: auto;
+    /* 字体 */
+    font-family: "Andale Mono", monospace;
+    /* 其他字体
+    font-family: "IMB Plex Mono", monospace;
+    font-family: "Times New Roman", Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Gill Sans", sans-serif; */
+    /* 内边距 */
+    padding: 10px 10px 10px 10px;
+    /* 外边距 */
+    margin-top: -450px;
+}
+.img1{
+    width: 100%;
+    margin: 0px;
+    margin-top: 40px
+}
+
+/* 某一行字符 */
+.box1 h1 {
+    font-size: 100px;
+    font-weight: 800;
+    /* 大小写（此处是全大写）
+    text-transform: uppercase; */
+    /* 字母之间的间距 */
+    letter-spacing: 0.1em;
+    /* 单词之间的间距 */
+    word-spacing: 0.2em;
+    text-align: center;
+    font-family: 楷体, 'Courier New',"Andale Mono", monospace;
+}
+.box1 h4 {
+    margin-top: 100px;
+    font-weight: 800;
+    /* 大小写（此处是全大写）
+    text-transform: uppercase; */
+    /* 字母之间的间距 */
+    letter-spacing: 0.1em;
+    /* 单词之间的间距 */
+    word-spacing: 0.2em;
+    text-align: center;
+    font-family: 楷体, 'Courier New',"Andale Mono", monospace;
+}
+.box2 {
+    /* 宽度 */
+    width: 80%;
+    /* 居中 */
+    margin: auto;
+    /* 字体 */
+    font-family: "等线 Light","Andale Mono", monospace;
+    /* 字宽
+    font-weight: bold; */
+    /* 简写方式 */
+    /* font: normal 16px "等线 Light","Andale Mono", monospace; */
+    border: 5px lime solid;
+    /* 上下左右都有20px的内边距 */
+    padding: 10px;
+    margin-top: 250px;
+    /* 圆角边框 */
+    border-radius: 50px;
+    /* 偏移方式 relative相对,absoluce绝对
+    position: absolute;
+    top: 30px;
+    left: 30px; */
+}
+.box2 h3{
+    /* 居中 */
+    text-align: center;
+    /* 字号 */
+    font-size: 30px;
+}
+/* list中的li */
+.list li{
+    /* 修改list的图片 */
+    /* 并排路径用两个点 */
+    list-style-image: url('../Image/Readcats2.jpg');
+    background-color: beige;
+}
+button {
+    background-color: #afafaf;
+    color: #fff;
+    padding: 10px 15px;
+}
+/* 按钮的两种状态 */
+/* 当鼠标放在上面 提示：hover要放在active的上面 */
+button:hover{
+    background-color: #7f7f7f;
+}
+/* 当按下按钮 */
+button:active{
+    background-color: #bfbfbf;
+}
+
+a {
+    /* 去掉下划线 */
+    text-decoration: none;
+    /* 字体颜色 */
+    color: #555555;
+}
+/* 状态 visited表示已经访问过网站*/
+a:hover{
+    color: blue;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.block {
+    
+    font-size: 12px;
+    float: left;
+    /* 宽度 */
+    width: 33.33%;
+    /* 边框 */
+    border: 3px coral solid;
+    /* 是否有边框 */
+    box-sizing: border-box;
+}
+.box-block {
+    margin-top: 30px;
+}
+
+/* 两个不一样宽度的文本框 */
+#ablock{
+    float: left;
+    width: 60%;
+    /* 边框 */
+    border: 3px limegreen solid;
+    /* 是否有边框 */
+    box-sizing: border-box;
+}
+#bblock{
+    float: left;
+    width: 40%;
+    /* 边框 */
+    border: 3px limegreen solid;
+    /* 是否有边框 */
+    box-sizing: border-box;
+}
+
+/* 条纹显示 奇数odd 偶数even*/
+.list2 li:nth-child(even){
+    background-color: #f3f3f3;
+}
+/* 第一个 */
+.list2 li:first-child {
+    background-color: #888888;
+}
+/* 第三个 */
+.list2 li:nth-child(3) {
+    background-color: #bfbfbf;
+    color: cyan;
+}
+
+.position-box{
+    width: 400px;
+    height: 400px;
+    border: 5px black solid;
+    position: relative;
+}
+.position-box h1 {
+    /* 此处设置为绝对位置，是对position-box的绝对位置（有relative）。如果删除absolute，就会在整个界面的顶端显示*/
+    position: absolute;
+    top: 50px;
+}
+.position-box h2 {
+    position: absolute;
+    left: 30px;
+}
+
+/* #fixed{
+    /* fixed表示悬停在界面的某一处
+    position: fixed;
+    right: 20px;
+    top: 20px;
+} */
